@@ -71,6 +71,15 @@ margin: 0;
  
 footer{}
 
+.current-page{
+    border-bottom: 1px solid #707070;
+   }
+   
+    .current-page:hover{
+   color: #707070;
+   }
+
+
 @media (min-width: 675px) {
 .container-flex{
     flex-direction: row;
