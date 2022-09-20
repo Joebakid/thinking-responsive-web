@@ -1,0 +1,110 @@
+/* GENERAL ELEMENT */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+p {
+  letter-spacing: 0.1em;
+  font-size: 1.2rem;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.2em;
+  margin-bottom: 14em;
+}
+
+/* BODY */
+
+/* CONTAINER */
+
+/* MAIN */
+main {
+  padding: 0 2em;
+}
+
+/* nav */
+nav {
+  display: flex;
+  justify-content: right;
+  gap: 2em;
+  /* background-color: blue; */
+}
+
+/* SMALLER ELEMENT */
+
+/* headings */
+h1 {
+  font-size: 3em;
+}
+
+h4 {
+  margin-bottom: 1em;
+}
+
+/* anchor */
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* ANCHOR /LINK */
+
+nav a:link {
+  text-decoration: none;
+
+  font-weight: bold;
+  font-size: large;
+  color: black;
+}
+
+.pi-game {
+  /* background-color: yellow; */
+  display: flex;
+  align-items: center;
+}
+
+.pi-game p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  font-size: large;
+  color: black;
+}
+
+.get-paid {
+  color: orange;
+}
+
+.early {
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+.explore-more {
+  font-weight: 700;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+.join-us {
+  font-size: 2em;
+}
+
+/* IMG /logo */
+.pi-logo {
+  width: 4em;
+  object-fit: center;
+  clip-path: circle();
+}
+
+.current-page {
+  border-bottom: 2px solid #444;
+}
