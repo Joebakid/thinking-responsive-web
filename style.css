@@ -4,12 +4,12 @@
   margin: 0;
   box-sizing: border-box;
   color: black;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 p {
   letter-spacing: 0.1em;
   font-size: 1.2rem;
+  line-height: 1.7;
 }
 
 /* HEADER */
@@ -18,16 +18,55 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0.2em;
-  margin-bottom: 14em;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 79%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.199);
+}
+/* FOOTER */
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.342);
+  align-items: center;
+  margin-top: 5%;
+  z-index: 2;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
+footer .terms {
+}
 /* BODY */
+body {
+  font-family: "inter", Times, serif;
+  background-image: url(img/background.png);
+  background-size: cover;
+  background-position-x: left;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: relative;
+}
 
 /* CONTAINER */
 
 /* MAIN */
 main {
   padding: 0 2em;
+  margin-top: 3%;
+  padding-top: 8em;
 }
 
 /* nav */
@@ -35,34 +74,106 @@ nav {
   display: flex;
   justify-content: right;
   gap: 2em;
+
   /* background-color: blue; */
+}
+
+.features:hover,
+.about-us:hover,
+.whitepaper:hover,
+.features:active,
+.about-us:active,
+.whitepaper:active {
+  color: orange;
 }
 
 /* SMALLER ELEMENT */
 
-/* headings */
-h1 {
-  font-size: 3em;
+.coin-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.3em;
+  margin: 0.3em;
+
+  width: 30%;
+  cursor: pointer;
+  margin-left: 50em;
 }
 
-h4 {
-  margin-bottom: 1em;
+.cryto-img {
+  width: 2rem;
+}
+
+.coin {
+  display: flex;
+  align-items: center;
+  font-size: 0.875em;
+  margin: 0 0.375em;
+  color: #ff960b;
+  border: 1px solid #fff;
+  padding: 0.7em 1em;
+}
+.coin:hover {
+  background-color: #707070;
+}
+
+.coin-btc {
+  margin-left: 0;
+}
+
+.cryto-name {
+  font-size: 0.8em;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 700;
+}
+
+.coin img {
+  width: 5em;
+  margin-right: 0.625em;
+  cursor: pointer;
+}
+
+.cryto-description {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/* headings */
+h1,
+h2,
+h3,
+h4,
+.early {
+  color: white;
+  letter-spacing: -2;
+  line-height: 1.2;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+h4,
+.early {
+  margin-bottom: 0.5em;
+  font-size: 1.3em;
 }
 
 /* anchor */
 a {
   text-decoration: none;
   cursor: pointer;
+  color: white;
 }
 
 /* ANCHOR /LINK */
 
 nav a:link {
   text-decoration: none;
-
-  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 600;
   font-size: large;
-  color: black;
 }
 
 .pi-game {
@@ -75,7 +186,7 @@ nav a:link {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: bold;
   font-size: large;
-  color: black;
+  color: orange;
 }
 
 .get-paid {
@@ -90,12 +201,22 @@ nav a:link {
 .explore-more {
   font-weight: 700;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  padding: 1em;
+  padding: 1em 2em;
   margin-bottom: 1em;
+
+  border: none;
+  cursor: pointer;
+}
+.explore-more:hover {
+  color: white;
+  background-color: orange;
+  transition: ease-in 0.5s;
 }
 
 .join-us {
   font-size: 2em;
+  margin-top: 0;
+  color: orange;
 }
 
 /* IMG /logo */
@@ -106,5 +227,30 @@ nav a:link {
 }
 
 .current-page {
-  border-bottom: 2px solid #444;
+  padding: 0.1em;
+  display: flex;
+  border-bottom: 1px solid orange;
+}
+.current-page:hover {
+}
+
+/* ICONS */
+.icons-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 10%;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+/* GRID */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }

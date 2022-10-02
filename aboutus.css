@@ -4,28 +4,70 @@
   margin: 0;
   box-sizing: border-box;
   color: black;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-body {
-  background-image: ;
+  font-family: ;
 }
 
-p {
-  letter-spacing: 0.1em;
-  font-size: 1.2rem;
-}
-
-/* HEADER */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.199);
+  font-size: 1.5em;
   padding: 0.2em;
+}
+
+p {
+  letter-spacing: 0.1em;
+  font-size: 2rem;
+  line-height: 1.7;
+  color: #444;
+}
+
+body {
+  font-family: "inter", Times, serif;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 79%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+article {
+  padding: 0.3em;
+}
+
+.article-one {
+  margin-top: 5%;
+}
+
+article p {
+}
+
+/* HEADER */
+
+/* FOOOTER */
+footer {
+  box-shadow: 0px 20px 30px 0px rgb(0, 0, 0);
 }
 
 /* BODY */
 
 /* CONTAINER */
+article,
+section {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ARTICLE */
+.article-one {
+}
+
+.article-two {
+}
 
 /* MAIN */
 main {
@@ -51,17 +93,25 @@ h4 {
   margin-bottom: 1em;
 }
 
+h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 1em;
+}
+
 /* anchor */
 a {
   text-decoration: none;
   cursor: pointer;
+  font-size: large;
+  font-weight: bold;
 }
 
 /* ANCHOR /LINK */
 
 nav a:link {
   text-decoration: none;
-
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: bold;
   font-size: large;
   color: black;
@@ -73,11 +123,10 @@ nav a:link {
   align-items: center;
 }
 
-.pi-game p {
+.pi-game a {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: bold;
   font-size: large;
-  color: black;
 }
 
 .get-paid {
@@ -100,6 +149,19 @@ nav a:link {
   font-size: 2em;
 }
 
+/* ICONS */
+.icons-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 10%;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
 /* IMG /logo */
 .pi-logo {
   width: 4em;
@@ -108,27 +170,146 @@ nav a:link {
 }
 
 .current-page {
-  border-bottom: 2px solid #444;
+  padding: 0.1em;
+  display: flex;
+  border-bottom: 1px solid orange;
+}
+.current-page:hover {
 }
 
-/* CSS GRID  */
-.about-img {
-  background-color: #444;
-  grid-template-columns: repeat(3, 1fr);
+.features:hover,
+.home:hover,
+.whitepaper:hover {
+  color: white;
+}
+
+.strong {
+  color: white;
+}
+
+/* for the photo  */
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+section {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4em;
+}
+.meet {
+  grid-column: 1/-1;
+  margin-top: 0.5em;
+}
+
+.grid {
   display: grid;
-  margin-top: 1em;
-  grid-template-rows: 1fr auto;
+  width: 100em;
+  gap: 1em;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  align-items: start;
+  gap: 1em;
 }
 
-.box {
-  width: 300px;
-  font-size: 1.5em;
+.grid-item {
+  background-color: #fff;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.2s;
 }
 
-.box img {
+.grid-item:hover {
+  transform: translateY(-0.5%);
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+}
+
+.card-img {
+  display: block;
   width: 100%;
+  height: 20rem;
+  object-fit: cover;
 }
 
-.box p {
-  color: wheat;
+.card-content {
+  padding: 1rem;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 79%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+.card-header {
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: -1;
+  color: white;
+  margin-bottom: 0.3rem;
+  text-align: center;
+  text-transform: lowercase;
+}
+
+.card-text {
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.7;
+  color: white;
+  margin-bottom: 2.5rem;
+}
+
+.card-btn {
+  display: block;
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 2rem;
+  text-align: center;
+  color: #3363ff;
+  background-color: #d8e0fd;
+  border: none;
+  border-radius: 0.4rem;
+  transition: 0.2s;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+}
+
+.card-btn span {
+  margin-left: 1rem;
+  transition: 0.2s;
+}
+
+.card-btn:hover,
+.card-btn:active {
+  background-color: #c2cffc;
+}
+
+.card-btn:hover span,
+.card-btn:active span {
+  margin-left: 1.5rem;
+}
+
+/* FLEX-LAYOUT */
+.container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+}
+
+header {
+}
+
+.article-one {
+}
+
+.article-two {
+}
+
+section {
 }

@@ -4,8 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="global.css" />
     <title>PI-GAMES</title>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="container">
@@ -24,20 +39,83 @@
 
         <nav>
           <a href="index.html" class="current-page">Home </a>
-          <a href="featured.html">Features</a>
-          <a href="#"> Whitepaper</a>
-          <a href="aboutus.html"> About Us</a>
+          <a href="featured.html" class="features">Features</a>
+          <a
+            href="https://pinetwork-official.medium.com/pi-whitepaper-chapters-mainnet-token-model-mining-and-roadmap-19f4a6774e71"
+            class="whitepaper"
+          >
+            Whitepaper</a
+          >
+          <a href="aboutus.html" class="about-us"> About Us</a>
         </nav>
       </header>
+
       <main>
         <h1>PLAY PI GAME AND <br /><span class="get-paid">GET PAID</span></h1>
         <h4>
           Upcoming big game on the pi network, yet to launch fully. <br />
           <span class="early"> you are early! </span>
         </h4>
-        <button class="explore-more">EXPLORE MORE</button>
+
         <h3 class="join-us">JOIN US ON</h3>
+        <button class="explore-more">TELEGRAM</button>
+
+        <div class="coin-list">
+          <div class="coin coin-btc">
+            <img src="img/bitcoin.png" alt="" class="btc-img" />
+            <div>
+              <h3>$<span id="bitcoin"></span></h3>
+              <p class="cryto-name">BITCOIN</p>
+            </div>
+          </div>
+
+          <div class="coin">
+            <img src="img/ethereum.png" alt="" class="eth-img" />
+            <div>
+              <h3>$<span id="ethereum"></span></h3>
+              <p class="cryto-name">ETHERUEM</p>
+            </div>
+          </div>
+
+          <div class="coin">
+            <img src="img/dogecoin.png" alt="" class="doge-img" />
+            <div>
+              <h3>$ <span id="dogecoin"></span></h3>
+              <p class="cryto-name">DOGECOIN</p>
+            </div>
+          </div>
+        </div>
       </main>
+
+      <footer>
+        <div class="image-cropper">
+          <img
+            src="img/pi-whitepaper.png"
+            alt="pi official logo"
+            class="pi-logo"
+          />
+        </div>
+        <div class="terms">
+          <p><a href="#">Terms of Service</a></p>
+          <p><a href="#">privacy Policy</a></p>
+          <p><a href="#">&copy;2022 PI NETWORK</a></p>
+        </div>
+
+        <span class="icons-box">
+          <a href="#"
+            ><img
+              src="https://img.icons8.com/ios/50/000000/twitter--v1.png"
+              class="icon"
+            />
+          </a>
+
+          <a href="#"
+            ><img
+              src="https://img.icons8.com/ios/50/000000/discord-logo--v1.png"
+              class="icon"
+          /></a>
+        </span>
+      </footer>
     </div>
   </body>
 </html>
