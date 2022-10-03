@@ -119,8 +119,11 @@ h1 {
   margin-bottom: 1em;
 }
 
+h2,
+h3,
 h4 {
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
+  text-align: center;
 }
 
 /* anchor */
@@ -239,10 +242,19 @@ ul li {
 .current-page:hover {
 }
 
+.writeup {
+  margin-bottom: 3em;
+}
+
 .learn-more {
   color: #548790;
-  font-weight: 700;
+
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.learn-more:hover {
+  color: #548790;
+  font-weight: 700;
 }
 
 .container-roadmap {

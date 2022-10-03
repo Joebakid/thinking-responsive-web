@@ -39,7 +39,7 @@ article {
 }
 
 .article-one {
-  margin-top: 5%;
+  margin-top: 3%;
 }
 
 article p {
@@ -149,6 +149,12 @@ nav a:link {
   font-size: 2em;
 }
 
+/* SPACING */
+article,
+section {
+  margin-bottom: 4em;
+}
+
 /* ICONS */
 .icons-box {
   display: flex;
@@ -217,7 +223,7 @@ section {
 
 .grid-item {
   background-color: #fff;
-  border-radius: 0.4rem;
+
   overflow: hidden;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
   cursor: pointer;
@@ -274,7 +280,7 @@ section {
   color: #3363ff;
   background-color: #d8e0fd;
   border: none;
-  border-radius: 0.4rem;
+
   transition: 0.2s;
   cursor: pointer;
   letter-spacing: 0.1rem;

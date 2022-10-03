@@ -95,9 +95,9 @@ nav {
   padding: 0.3em;
   margin: 0.3em;
 
-  width: 30%;
+  width: 35%;
   cursor: pointer;
-  margin-left: 50em;
+  margin-left: 40em;
 }
 
 .cryto-img {
@@ -135,6 +135,12 @@ nav {
 
 .cryto-description {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#bitcoin,
+#ethereum,
+#dogecoin {
+  color: orange;
 }
 
 /* headings */
