@@ -62,3 +62,11 @@ footer {
   font-size: large;
   color: orange;
 }
+
+.mobile-nav-icons {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}

@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="featured.css" />
     <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="./queries.css" />
      
     <title>FEATURED</title>
   </head>
@@ -19,31 +20,69 @@
     <div class="container">
 
    
-    <header>
-      <div class="pi-game">
-        <a href="#"> PI GAMES</a>
+      <header>
+        <div class="pi-game">
+          <a href="#"> <p>PI GAMES</p></a>
 
-        <div class="image-cropper">
-          <img
-            src="img/pi-whitepaper.png"
-            alt="pi official logo"
-            class="pi-logo"
-          />
+          <div class="image-cropper">
+            <img
+              src="img/pi-whitepaper.png"
+              alt="pi official logo"
+              class="pi-logo"
+            />
+          </div>
         </div>
-      </div>
 
-      <nav>
-        <a href="index.html" class="home">Home </a>
-        <a href="featured.html" class="current-page">Features</a>
-        <a href="https://pinetwork-official.medium.com/pi-whitepaper-chapters-mainnet-token-model-mining-and-roadmap-19f4a6774e71" target="_blank" class="whitepaper"> Whitepaper</a>
-        <a href="aboutus.html" class="about-us"> About Us</a>
-      </nav>
-    </header>
+        <nav>
+          <div class="nav-items mobileNav">
+            <a href="index.html" class="home">Home </a>
+            <a href="featured.html" class="current-page">Features</a>
+            <a
+              href="https://pinetwork-official.medium.com/pi-whitepaper-chapters-mainnet-token-model-mining-and-roadmap-19f4a6774e71"
+              class="whitepaper"
+            >
+              Whitepaper</a
+            >
+            <a href="aboutus.html" class="about-us"> About Us</a>
+          </div>
+
+          <div class="mobile-nav-icons">
+            <svg
+              class="mobile-nav-icons__open"
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              style="fill: #000000"
+            >
+              <path
+                d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z"
+              ></path>
+            </svg>
+            <svg
+              class="mobile-nav-icons__close hidden"
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="30"
+              height="30"
+              viewBox="0 0 50 50"
+              style="fill: #0e0a0a"
+            >
+              <path
+                d="M 25 2 C 12.309534 2 2 12.309534 2 25 C 2 37.690466 12.309534 48 25 48 C 37.690466 48 48 37.690466 48 25 C 48 12.309534 37.690466 2 25 2 z M 25 4 C 36.609534 4 46 13.390466 46 25 C 46 36.609534 36.609534 46 25 46 C 13.390466 46 4 36.609534 4 25 C 4 13.390466 13.390466 4 25 4 z M 32.990234 15.986328 A 1.0001 1.0001 0 0 0 32.292969 16.292969 L 25 23.585938 L 17.707031 16.292969 A 1.0001 1.0001 0 0 0 16.990234 15.990234 A 1.0001 1.0001 0 0 0 16.292969 17.707031 L 23.585938 25 L 16.292969 32.292969 A 1.0001 1.0001 0 1 0 17.707031 33.707031 L 25 26.414062 L 32.292969 33.707031 A 1.0001 1.0001 0 1 0 33.707031 32.292969 L 26.414062 25 L 33.707031 17.707031 A 1.0001 1.0001 0 0 0 32.990234 15.986328 z"
+              ></path>
+            </svg>
+          </div>
+        </nav>
+      </header>
 
  
 
-    <main>
-      <div class="writeup">
+    <main class="features-main">
+      <div class="writeup space-q">
         <h2 class="model">Pi Token Model </h2>
           <p>
             On December 28, 2021, Pi Network launched the Enclosed Mainnet along
@@ -89,7 +128,7 @@
   
       </div>
       
-      <p >  <a href="https://en.wikipedia.org/wiki/Pi" class="learn-more" >LEARN MORE ON WIKI  &RightArrow; </a> </p>
+      <p >  <a href="https://en.wikipedia.org/wiki/Pi" class="learn-more"  target="_blank">LEARN MORE ON WIKI  &RightArrow; </a> </p>
 
     </main>
 
@@ -122,5 +161,25 @@
       </span>
     </footer>
   </div>
+
+    <script>
+      const openNav = document.querySelector(".mobile-nav-icons__open");
+const closeNav = document.querySelector(".mobile-nav-icons__close");
+const mobileNavBar = document.querySelector(".mobileNav");
+
+openNav.addEventListener("click", function () {
+  mobileNavBar.classList.add("showNav");
+  openNav.classList.toggle("hidden");
+  closeNav.classList.toggle("hidden");
+  console.log("opened nav");
+});
+
+closeNav.addEventListener("click", function () {
+  mobileNavBar.classList.remove("showNav");
+  closeNav.classList.toggle("hidden");
+  openNav.classList.toggle("hidden");
+});
+
+    </script>
   </body>
 </html>
